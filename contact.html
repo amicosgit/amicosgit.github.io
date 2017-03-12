@@ -310,9 +310,10 @@
     <!-- Main js-->
     <script src="assets/js/main_script.js"></script>
     <script>
+        function validateEmail(email) {    var re = /\S+@\S+\.\S+/;    return re.test(email);}
         $('#submitButton').click(function(){   
             var eml=$('#email').val();
-                if (eml != null||eml != "") {
+                if (validateEmail(eml)) {
                   $('#modal-success').modal('show');
                         $('#closeModal').click(function() {
                         $('#ajax-contact').trigger('reset')
