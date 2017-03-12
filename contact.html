@@ -206,14 +206,7 @@
     </section>
 
 
-    <!-- Google Map starts -->
-    <div class="gmap-area section-big">
-        <div class="container">
-            <div id="contactgoogleMap"></div>
-        </div>
-    </div>
-    <!-- Google Map ends-->
-
+  
 
 
     <!-- Footer area starts -->
@@ -269,7 +262,7 @@
     <!-- Footer area ends -->
 
     <div class="copyright-text text-center">
-        <p>&copy; 2016 Copyright Coderspoint</p>
+        <p>&copy; 2016 Copyright amicos technologies</p>
     </div>
 
 
@@ -297,29 +290,14 @@
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
 
     <!-- GOOGLE MAP JS -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+    
 
 
     <!-- Main js-->
     <script src="assets/js/main_script.js"></script>
 
 
-    <script>
-        $(document).ready(function(){
-            //  09. Google Map js
-            var myCenter=new google.maps.LatLng( 23.8028085, 90.4070036 );
-            function initialize(){
-                var mapProp = {
-                    zoom:14,
-                    center:myCenter,
-                    scrollwheel: false,
-                    mapTpeIdy:google.maps.MapTypeId.ROADMAP
-                };
-                var map=new google.maps.Map(document.getElementById("contactgoogleMap"),mapProp);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        });
-    </script>
+   
 
 </body>
 
