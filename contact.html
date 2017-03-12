@@ -313,7 +313,9 @@
     <script>
         $('#submitButton').click(function(){ 
             $('#modal-success').modal('show');
-            $('#ajax-contact').trigger('reset');
+            setTimeout(function() {
+            $('#ajax-contact').trigger('reset')}, 10);
+
         })
     </script>
 
