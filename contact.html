@@ -193,7 +193,23 @@
                         </form>
 
                         <!-- Submition status -->
-                        <div id="form-messages"></div>
+                        <div class="modal fade in" id="modal-success" role="dialog">
+                            <div class="modal-dialog modal-sm">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header" id="mod-cust">
+                                  <h4 class="modal-title">THANK YOU</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Thanks for your Feedback.!</p><p>
+                                </p></div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">CLOSE</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
 
                     </div>
                     <!-- Contact form ends-->
@@ -294,7 +310,12 @@
 
     <!-- Main js-->
     <script src="assets/js/main_script.js"></script>
-
+    <script>
+        $('#submitButton').click(function(){ 
+            $('#modal-success').modal('show');
+            $('#ajax-contact').trigger('reset');
+        })
+    </script>
 
    
 
